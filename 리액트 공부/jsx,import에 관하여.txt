@@ -1,0 +1,14 @@
+jsx란? 자바스크립트 + xml의 형태로 React에서는 xml의 형태를 자바스크립트로 변환하는 역할을 한다
+
+import Raect,{Component, Fragment} from 'react';
+==> 각 파일을 import할 수 있는 이유는 webpack이 있기 때문
+webpack이 불러온 파일은 확장자에 따라 분류해서 실행하게 된다
+==> jsx문법을 사용하기 위해 React를 import한다
+==> {Component}는 내부의 component를 사용하기위해 쓰인다.
+==> {Fragment}는 나란히 태그를 사용할 수 없는 React의 특성상 부모 태그를 감싸줘야하는데 다른 태그로 감쌀경우 css의 문제가 발생할 수 있음으로 <Fragment></Fragment>를 감싸서 하위태그를 사용할 수 있도록 한다
+
+import './파일명';
+==> 해당경로에 있는 파일을 import한다
+
+React 태그 작성시
+태그는 항상 닫혀있어야한다
