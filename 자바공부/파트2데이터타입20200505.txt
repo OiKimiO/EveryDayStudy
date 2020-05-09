@@ -1,0 +1,37 @@
+데이터타입 형변환
+데이터 사이즈 : byte < short,char < int < long < float < double
+
+1. 묵시적 변환 : 데이터 사이즈가 큰 데이터타입을 작은 데이터타입으로 변환시킬 때는 casting을 따로 할 필요가 없다
+int intValue = 3;
+long longValue = intValue; --> 알아서 long타입으로 변환됨
+
+2. 명시적 변환 : 데이터 사이즈가 작은 데이터타입을 큰 데이터타입으로 변환시킬때는 casting을 따로 해주어야 한다. 
+long longValue = 3L;
+int    intValue   = (int) longValue;
+
+연산자 
+부호연산자 : +,- 와 같은 단항연산자를 말합니다.
+산술연산자 : 사칙연산(+,-,*,/) 와 나머지 (%)를 말합니다.
+증감연산자 : ++, -- 와 같은 단항연산자를 말합니다
+
+증감연산자 예시)
+int intValue   = 3;
+int intValue1 = ++intValue; 
+ ==>(intValue1 = intValue + 1 , intValue = intValue + 1);
+int intValue2 = intValue++;
+ ==>(intValue2 = intValue, intValue = intValue + 1); 
+
+대입연산자 
+복합대입연산자 
+int intValue += 3; 
+ ==> (int intValue = intValue +3;)
+int intValue -= 3;
+ ==> (int intValue = intValue -3;)
+
+비교연산자 
+변수 사용방법 
+int a = 1;
+int b = 2; 
+boolean checkTrue = a !=b;
+System.out.println(checkTrue); 
+ ==> 결과 true
